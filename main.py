@@ -11,3 +11,4 @@ print("Результат деления через fake_math:", result_fake)
 print("Результат деления через true_math:", result_true)
 
 
+
