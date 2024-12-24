@@ -1,25 +1,13 @@
-# module_4_1.py
-
+# Импортируем функции из других модулей
 from fake_math import divide as fake_divide
 from true_math import divide as true_divide
 
+# Вызываем обе функции с одинаковыми аргументами
+result_fake = fake_divide(10, 0)
+result_true = true_divide(10, 0)
 
-def main():
-    try:
-        result_fake = fake_divide(42, 0)
-        print(f'Результат от fake_divide: {result_fake}')
-    except Exception as e:
-        print(f'Ошибка в fake_divide: {e}')
-
-    try:
-        result_true = true_divide(42, 0)
-        print(f'Результат от true_divide: {result_true}')
-    except Exception as e:
-        print(f'Ошибка в true_divide: {e}')
-
-
-if __name__ == "__main__":
-    main()
-
+# Выводим результаты
+print("Результат деления через fake_math:", result_fake)
+print("Результат деления через true_math:", result_true)
 
 
